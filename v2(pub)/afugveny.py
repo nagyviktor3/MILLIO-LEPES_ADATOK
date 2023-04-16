@@ -106,7 +106,7 @@ print("9A : ",szazalek_x5,"   növekedés: ", valtozo5)
 print()
 print("TO THE TOP! ->",int(data["x20"])-int(data["x40"]),"K")
 def kiiras():
-    with open('aoutput.txt', 'w',encoding="utf-8") as f:
+    with open('aoutput.txt', 'a',encoding="utf-8") as f:
         f.write('\n')
         f.write('\n')
         f.write('\n')
