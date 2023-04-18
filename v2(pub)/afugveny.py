@@ -31,10 +31,10 @@ def all_linef():
     global all_line,count
     count=len(all_line)-18
 
-with open("deletet.txt","r",encoding="utf-8") as r:
+with open("v2(pub)/deletet.txt","r",encoding="utf-8") as r:
     all_line=r.readlines()
     all_linef()
-with open("deletet.txt","r",encoding="utf-8") as r:
+with open("v2(pub)/deletet.txt","r",encoding="utf-8") as r:
     sor=r.readline()
 
     for i in range(count-1):
@@ -94,7 +94,7 @@ valtozo4=str(int(data["x40"])-int(data["x4"]))+"K"
 valtozo5=str(int(data["x50"])-int(data["x5"]))+"K"
 
 szazalek_x1=szazalek(data['x1'],data["x10"])
-print("AZ eredmények: ",szazalek_x1,"   növekedés: ", valtozo1)
+print("AZ eredmények: ",szazalek_x1,"   növekedés: ", f"{int(valtozo1[:-1]):_}")
 szazalek_x2=szazalek(data['x2'],data["x20"])
 print("12B: ",szazalek_x2,"   növekedés: ", valtozo2)
 szazalek_x3=szazalek(data['x3'],data["x30"])
@@ -106,7 +106,7 @@ print("9A : ",szazalek_x5,"   növekedés: ", valtozo5)
 print()
 print("TO THE TOP! ->",int(data["x20"])-int(data["x40"]),"K")
 def kiiras():
-    with open('aoutput.txt', 'a',encoding="utf-8") as f:
+    with open('v2(pub)/aoutput.txt', 'w',encoding="utf-8") as f:
         f.write('\n')
         f.write('\n')
         f.write('\n')

@@ -24,7 +24,7 @@ def szokez(osztaly,valtozo):
 
 
 
-with open("deletet.txt", "a",encoding="utf-8") as f:
+with open("v2(pub)/deletet.txt", "a",encoding="utf-8") as f:
     f.write("Összes lépés==")
     f.write(f"{x:_}")
     f.write('\n')
@@ -41,7 +41,7 @@ with open("deletet.txt", "a",encoding="utf-8") as f:
     f.write(now.strftime("%d"))
     f.write('\n')
     f.write('\n')
-    f.write('\n')
+    
     # kiiras="12B"+szokez(a)+str(x*(b12/100))
 import afugveny
 afugveny.kiiras()
